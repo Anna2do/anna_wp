@@ -1,0 +1,132 @@
+// @-moz-document url-prefix()  
+//     #gmh--home-header
+//         background: #841926!important
+//         .gmh--video-abdecker
+//             &:after
+//                 display: none
+
+#gmh--home-header, #gmh--projekte-header, #gmh--karriere-header, #gmh--arbeitgeber-header, #gmh--faq-header, #gmh--studium-header, #gmh--ausschreibungen-header
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    flex-wrap: wrap
+    width: 100%
+    height: 100vh
+    max-height: 100vh
+    background: $main-rot
+    padding: 20px
+    overflow: hidden
+    position: relative
+    svg
+        width: 100%
+        position: absolute
+        bottom: -5vw
+        //transform: translateY(-25%)
+        left: 0
+    
+    .gmh--bg-video
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        z-index: 0
+    .gmh--video-abdecker
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        z-index: 1
+        padding-bottom: 62.25%
+        padding-top: 25px
+        @media (max-width: 724px)
+            padding-bottom: 70%
+        @media (max-width: 705px)
+            padding-bottom: 60%
+        @media (max-width: 400px)
+            padding-bottom: 58%
+        @media (max-width: 350px)
+            padding-bottom: 56%
+
+        &:after
+            content: ""
+            position: absolute
+            left: 0
+            top: 0
+            width: 100%
+            height: 30%
+            // background: linear-gradient(to top, rgba(#9b2628, 0), #9b2628)
+            background: linear-gradient(to top,rgba(155,38,40,0),$main-rot)
+    .gmh--col-1
+        flex: 3
+        z-index: 1
+        position: relative
+        &:last-of-type
+            flex: 2
+            min-width: 550px
+            padding-right: 20px
+
+    h1
+        color: white
+        max-width: 800px
+        font-size: 7em
+        font-weight: bold
+        line-height: 1
+        margin-bottom: 40px
+        text-shadow: 0 0 10px rgba(black,0.15)
+        text-align: center
+        z-index: 1
+        strong
+            font-weight: bold
+            text-transform: uppercase
+            font-size: inherit
+            line-height: 1
+    p
+        color: white
+        z-index: 10
+        font-size: 1.3rem
+        max-width: 600px
+        text-align: center
+    @media (max-width: 768px)
+        //display: block
+        //padding-top: 120px
+        h1
+            font-size: 3em
+        .gmh--col-1
+            &:last-of-type
+                max-width: 100%
+                min-width: 50%
+                
+                
+#gmh--projekte-header
+    // background: radial-gradient(#ffcc00, $main-orange)
+    background: $main-orange
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    svg
+        //width: 100%
+        position: absolute
+        bottom: 0
+        max-height: 100%
+        //transform: translateY(-25%)
+        left: 0
+    p
+        display: inline-block
+        padding: 5px 10px
+        position: relative
+        color: white
+        margin-bottom: 20px
+        text-align: center
+    h1
+        display: block
+        width: 100%
+        text-align: center
+#gmh--karriere-header
+    p
+        display: inline-block
+        padding: 5px 10px
+        position: relative
+        color: white
+        margin-bottom: 20px
+        text-align: center

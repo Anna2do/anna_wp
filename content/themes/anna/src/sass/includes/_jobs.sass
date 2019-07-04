@@ -1,0 +1,132 @@
+#gmh--jobs-header
+    height: 180px
+    background: $main-blau
+    ul
+        margin: 20px 0 40px 0
+        li
+            // color: $grau-text
+            position: relative
+            margin-left: 20px
+            margin-bottom: 5px
+            font-size: 1rem
+            &:before
+                content: ""
+                position: absolute
+                width: 8px
+                height: 8px
+                background: $main-blau
+                left: -20px
+                top: 5px
+#gmh--jobs
+    h1 
+        line-height: 40px
+        font-size: 34px
+    ul
+        margin-bottom: 27px
+        font-size: 1rem
+    ul 
+        margin-left: 15px
+        list-style: disc
+    .company_logo
+        margin-top: -9px
+    .application_button
+        &:hover
+            background-color: black!important
+
+
+#karriere, #arbeitgeber
+    .gmh--toggle-section
+        @media (max-width: 1000px)
+            padding: 20px
+        .toggles
+            .toggle
+                border: 1px solid lighten($main-orange, 30%)
+                &>div
+                    padding: 20px
+                    a
+                        color: $main-orange
+                             
+                h3
+                    background: $main-orange
+                    font-size: 1rem
+                    a
+                        font-size: 1rem!important
+                        text-transform: uppercase
+                        line-height: 1.4!important
+                        color: white
+                        font-weight: 800
+                        i
+                            font-size: inherit
+                            color: inherit
+                            font-family: FontAwesome!important
+                            top: 15px
+                            &:before
+                                content: "\f0da"
+                                font-size: 20px
+                                line-height: 1
+                                color: inherit
+                &.open
+                    border: 1px solid $main-orange
+                    h3
+                        a
+                            background: $main-orange!important
+                            i
+                                transform: rotate(90deg)
+                                top: 16px
+                                &:before
+                                    content: "\f0da"
+#arbeitgeber
+    .socialMedia
+        .gmh--col-1
+            height: auto!important
+            max-height: auto!important
+            min-height: auto!important
+    .toggle
+        i 
+            top: 45%!important
+        &.open
+            i
+                top: 15px!important
+        p 
+            padding: 0
+#border-box
+    .vc_column-inner     
+        border: 1px solid $main-orange
+        padding: 20px 20px 0px
+        strong 
+            font-weight: 600
+            text-transform: uppercase
+            color: orange
+
+.job--item
+    max-width: 1000px
+    margin: 0 auto 10px
+    background: lighten($main-gelb, 30%)
+    padding: 15px
+    transition: all 200ms ease
+    border: 1px solid transparent
+    &:hover
+        border: 1px solid lighten($main-orange, 20%)
+    .job--content
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        .job--thumbnail
+            width: 40px
+            height: 40px
+            margin-right: 20px
+            @media (max-width: 650px)
+                display: none
+            img
+                width: 100%
+                height: 100%
+        .job--text
+            flex: 1 0 0
+            display: flex
+            align-items: center
+            height: 100%
+            justify-content: space-between
+            p
+                margin: 0
+                padding: 0
+                color: #676767

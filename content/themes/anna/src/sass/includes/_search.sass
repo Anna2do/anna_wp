@@ -1,0 +1,66 @@
+body.ascend #search-outer.gmh
+    z-index: 99999999999!important
+    background-color: rgba(255,255,255,0.96)
+    height: 100%!important
+    width: 100%
+    position: fixed
+    padding: 0    
+
+    #search
+        input[type="text"].gmh--input-suche 
+            font-size: 2rem!important
+            line-height: 1
+            &::placeholder
+                color: #333333
+                font-size: 2rem
+.gmh.search-results, .gmh.search-no-results
+    //background: $main-rot!important
+    #gmh--search-results
+        margin-top: 0px!important
+        border-top: 100px solid $main-rot
+        min-height: 90vh
+        .section-title
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            h1
+                flex: 1 0 0
+            #search--result-search
+                flex: 1 0 0
+                max-width: 250px
+                display: flex
+                .minimal-form-input
+                    padding-top: 0
+                    label
+                        .text
+                            margin-top: 0
+                    input
+                        margin: 0
+                        padding: 10px!important
+                input.search-submit
+                    padding: 0 10px!important
+    #logo
+        box-shadow: 0 0 10px rgba(black, 0.15)
+#search-results
+    display: block
+    flex-wrap: wrap
+    width: 100%
+    article.result
+        width: 100%
+        position: relative!important
+        flex: 1 0 0
+        left: 0!important
+        top: 0!important
+        margin-bottom: 10px
+        border-bottom: 1px solid #ececec
+        .inner-wrap
+            padding: 0px 0 10px
+            box-shadow: none
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            a
+                img
+                    width: 150px
+                    margin-right: 20px
+                    display: none

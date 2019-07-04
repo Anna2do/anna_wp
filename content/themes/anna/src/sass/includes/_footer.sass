@@ -1,0 +1,32 @@
+#footer
+    width: 100%
+    margin-bottom: 30px
+    position: relative
+    .row
+        background: $hh-blau
+        max-width: 100vw
+        padding: 30px 20px
+        position: relative
+        .hh-divider
+            position: absolute
+            left: 0
+            top: -25px
+            width: 400px
+            max-width: 50%
+            background: $hh-rot
+            height: 50px
+            z-index: 99999
+            border-bottom-right-radius: 20px
+            &:after
+                content: ""
+                position: absolute
+                right: -27px
+                border-top: 40px solid $hh-rot
+                border-right: 30px solid transparent
+
+        .container
+            max-width: 1400px
+            text-align: right
+            padding: 0
+            a, span
+                color: white

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,uBADmB,CACnB,EAAE,AAAA,mBAAmB,AAAC,CAClB,MAAM,CAAE,IAAI,CACZ,UAAU,CAAE,GAAG,CACf,WAAW,CAAE,GAAG,CAChB,KAAK,CAAE,IAAI,CACX,aAAa,CAAE,CAAC,CACnB",
+    "sources": [
+        "field_select.scss"
+    ],
+    "names": [],
+    "file": "field_select.min.css"
+}

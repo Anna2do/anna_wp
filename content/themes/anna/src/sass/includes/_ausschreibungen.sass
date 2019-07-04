@@ -1,0 +1,136 @@
+#gmh--ausschreibungen-header
+    width: 100%
+    // height: 180px
+    background: radial-gradient(lighten(#33373b, 10%), #33373b)  top center
+    @media (max-width: 1140px)
+        height: 80px
+#gmh--ausschreibungen-intro
+    padding: 60px 40px!important
+
+.ausschreibungen
+    padding: 0 40px!important
+    h2
+        color: $main-grau
+        text-transform: uppercase
+        font-size: 1.6rem
+        max-width: 800px
+        margin-bottom: 20px
+
+    p, b
+        font-size: 1rem
+        max-width: 800px
+
+    a 
+        color: $main-rot
+        margin-bottom: 10px
+        display: inline-block
+    .gmh--col-1
+        height: 50vw
+        max-height: 350px
+        min-height: 200px
+        margin-bottom: 30px
+    .gmh--col-2
+        height: 50vw
+        max-height: 350px
+        min-height: 160px
+        margin-bottom: 30px
+    .margin-right
+        margin-right: 20px
+    @media (max-width: 650px)
+        .mobile-hidden
+            display: none
+        .margin-right
+            margin-right: 0
+    .margin-left
+        margin-left: 20px
+    @media (max-width: 650px)
+        .mobile-hidden
+            display: none
+        .margin-left
+            margin-right: 0
+
+    section
+        padding: 0 40px
+
+    ul
+        margin: 0px 0 20px 0
+        li
+            // color: $grau-text
+            position: relative
+            margin-left: 20px
+            margin-bottom: 5px
+            font-size: 1rem
+            &:before
+                content: ""
+                position: absolute
+                width: 8px
+                height: 8px
+                background: $main-rot
+                left: -20px
+                top: 5px
+
+#gmh--ausschreibungen
+    
+    .gmh--toggle-section
+        max-width: 1000px
+        margin: 0 auto
+        @media (max-width: 1000px)
+            padding: 20px
+        .toggles
+            .toggle
+                border: 1px solid lighten($main-grau, 30%)
+                >div
+                    padding: 20px
+                    a
+                        display: block
+                        padding: 10px 35px 10px 15px
+                        background: lighten($main-grau, 45%)
+                        margin-bottom: 10px
+                        color: $main-grau
+                        position: relative
+                        cursor: pointer
+                        transition: all 300ms ease
+                        padding-left: 45px
+
+                        &:before
+                            content: "\f1c1"
+                            font-family: FontAwesome
+                            font-weight: 400
+                            font-size: 20px
+                            margin-right: 10px
+                            color: $main-rot
+                            position: absolute
+                            left: 15px
+                            top: 7px
+                        &:hover
+                            background: lighten($main-grau, 50%)
+                h3
+                    background: lighten($main-grau, 30%)
+                    font-size: 1rem
+                    a
+                        font-size: 1rem!important
+                        text-transform: uppercase
+                        line-height: 1.4!important
+                        color: white
+                        font-weight: 800
+                        i
+                            font-size: inherit
+                            color: inherit
+                            font-family: FontAwesome!important
+                            top: 15px
+                            &:before
+                                content: "\f0da"
+                                font-size: 20px
+                                line-height: 1
+                                color: inherit
+                &.open
+                    border: 1px solid $main-grau
+                    h3
+                        a
+                            background: $main-grau!important
+                            i
+                                transform: rotate(90deg)
+                                top: 16px
+                                &:before
+                                    content: "\f0da"
+            

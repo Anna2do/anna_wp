@@ -1,0 +1,453 @@
+#gmh--karriere-header, #gmh--arbeitgeber-header, #gmh--faq-header, #gmh--studium-header
+    // background: radial-gradient(lighten($main-gelb,10%), $main-orange)
+    background: $main-orange
+#gmh--arbeitgeber-intro, #gmh--faq-intro, #gmh--studium-intro
+    padding-bottom: 40px
+#gmh--karriere-intro
+    padding: 0
+
+#faq
+    .toggles
+        @media (max-width: 1000px)
+            padding: 0 40px!important
+        p, h3 
+            font-size: 1rem!important
+        p 
+            padding-bottom: 0
+#studium
+    a 
+        color: $main-orange
+    h2
+        color: $main-orange
+    h3
+        color: $main-orange
+        text-transform: uppercase
+    .toggles
+        .toggle
+            border: 1px solid #94a5c8
+            .aLink
+                color: #94a5c8!important
+                background: white
+                padding: 0
+                display: inline-block
+                &:before
+                    display: none
+            a
+                background: #94a5c8
+                color: white
+                &:before
+                    color: white
+            &.open
+                h3
+                    a
+                        background: #617eac!important
+                a
+                    color: white
+                border: 1px solid #617eac
+#karriere
+    .ausschreibungen
+        margin: 0
+        padding: 0!important
+    a 
+        color: $main-orange
+        margin-bottom: 0
+    h2
+        color: $main-orange
+    h3
+        color: $main-orange
+        text-transform: uppercase
+    .toggles
+        .toggle
+            border: 1px solid $main-orange
+            .aLink
+                background: white
+                padding: 0
+                display: inline-block
+                &:before
+                    display: none
+            a
+                //background: #94a5c8
+                color: white
+                &:before
+                    color: white
+            h3
+                background: $main-orange
+            .job_listings
+                li.job_listing
+                    a
+                        background: lighten($main-gelb, 30%)
+                        padding: 10px 20px 10px
+                        color: $main-orange!important
+                h3
+                    background: none
+                    color: white
+            &.open
+                &>h3
+                    a
+                        background: $main-orange!important
+                a
+                    color: white
+                border: 1px solid $main-orange
+                .job_listings
+                    li.job_listing
+                        a
+                            background: lighten($main-gelb, 30%)
+                    h3
+                        background: none
+                        color: $main-orange
+    .content
+        font-size: 1em
+        max-width: 1040px
+        padding: 20px
+        &.ausschreibungen
+            padding: 20px!important
+        .span_12
+            display: flex!important
+            flex-wrap: wrap
+            @media (max-width: 1000px)
+                .gmh--image-box
+                    order: 1
+                    margin: 20px 0!important 
+                .mobile--order-2
+                    order: 2
+    #gmh--arbeitgeber
+        .gmh--image-box
+            max-width: 100%
+            min-width: 200px
+            width: calc(50% - 20px)
+            &:nth-child(odd)
+                margin-right: 20px!important
+            @media (max-width: 500px)
+                width: 100%
+                margin-right: 0!important
+    #karriere--kontakt
+        .gmh--image-box
+            max-width: 100%
+            min-width: 160px
+            width: calc(33% - 40px)
+            margin-right: 20px!important
+            &:last-child
+                margin-right: 0px!important
+            @media (max-width: 650px)
+                width: 100%
+                margin: 0!important
+                .wpb_wrapper
+                    display: flex!important
+                    >div
+                        margin-right: 20px!important
+    ul
+        margin: 20px 0 40px 0
+        li
+            // color: $grau-text
+            position: relative
+            margin-left: 20px
+            margin-bottom: 5px
+            font-size: 1rem
+            &:before
+                content: ""
+                position: absolute
+                width: 8px
+                height: 8px
+                background: $main-orange
+                left: -20px
+                top: 5px
+    .gmh--section-divider
+        margin: 60px 0
+    .job_listings
+        li
+            list-style-type: none
+            margin: 0
+            //padding: 10px 0
+            &:before
+                content: none
+            a
+                padding: 10px 0
+                display: flex
+                align-items: flex-start
+                img
+                    left: 0
+                    margin-right: 20px
+                    position: relative
+                    min-width: 42px
+                    @media (max-width: 767px)
+                        visibility: visible
+                .position
+                    padding-left: 0
+                    max-width: 100%
+                    width: 70%
+                    float: none
+                    display: inline-block
+                .meta
+                    margin: 0
+                    text-align: left
+                    float: none
+     
+                .date
+                    margin: 0
+                    padding: 0
+                .location
+                    text-align: left
+                    float: none
+                @media (max-width: 767px)
+                    display: block
+                    width: 100%
+                    
+                    img
+                        float: none
+                        display: inline-block
+                        vertical-align: top
+                        margin-right: 10px
+                    .location, .meta
+                        margin-left: 49px
+                        width: 100%
+    .search_jobs
+        padding: 20px
+        .text
+            .text-inner
+                margin-bottom: 10px
+        label.search_keywords
+            height: auto
+            color: $main-grau
+            &:after
+                border-color: $main-orange!important
+        .search_location
+            display: none
+    .job_filters
+        .job_types
+            display: none
+        .minimal-form-input
+            padding: 0
+            margin: 0 0 10px
+
+    .gmh--karriere-img-small
+        width: 150px
+        height: auto
+        margin-right: 20px
+        margin-bottom: 20px
+    .gmh--karriere-img-row
+        .aLink
+            color: #b3081b
+    .gmh--arbeitgeber-img-row
+        display: flex
+        @media (max-width: 780px)
+            display: block
+        .soft-row
+            align-items: center
+            margin-bottom: 20px
+            .familiensiegel
+                max-width: 130px
+                align-items: center
+                margin: 0px auto
+    .gmh--studium-img-row
+        display: flex
+        margin-left: 4%
+        @media (max-width: 1120px)
+            padding: 0 40px
+            margin-left: 0%
+        @media (max-width: 780px)
+            display: block
+        .soft-row
+            align-items: center
+            margin-bottom: 20px
+        .aLink
+            color: $main-orange
+    .karriereButton
+        background: #00437b
+        color: white
+        min-width: 150px
+        padding: 7px 20px
+        text-align: center
+        margin: 15px 0
+        &:hover
+            background: #333
+.karriere--gelb
+    padding-top: 40px!important
+    padding-bottom: 40px!important
+    margin-top: 40px
+    background: lighten($main-orange, 42%)!important
+    section
+        background: transparent
+.btn--outline
+    display: inline-block
+    border: 2px solid $main-orange
+    padding: 7px 20px
+    color: $grau-text!important
+    transition: all 300ms ease
+    &:hover
+        background: $main-orange
+        color: white!important
+.gmh--image-box
+    p
+        padding-bottom: 15px!important
+    strong
+        text-transform: uppercase
+        color: $main-orange
+    img
+        max-width: 100%
+        height: auto
+        margin-bottom: 20px!important
+.m0
+    img
+        margin-bottom: 0px!important
+
+svg#headerImage4
+    opacity: 0.7
+    .st0
+        stroke: white
+        stroke-dasharray: 5000
+        stroke-dashoffset: 5000
+        animation: draw 15s forwards
+        stroke-width: 1px
+    .st1
+        stroke: white
+        stroke-dasharray: 5000
+        stroke-dashoffset: 5000
+        animation: draw 10s forwards
+        animation-delay: 5s
+        stroke-width: 1px
+    .small
+        stroke: white
+        stroke-dasharray: 400
+        stroke-dashoffset: 400
+        animation: drawSmall 10s forwards
+        stroke-width: 1px
+        fill: none
+svg#headerImage2
+    opacity: 0.7
+    .st0
+        stroke: white
+        stroke-dasharray: 5000
+        stroke-dashoffset: 5000
+        animation: draw 15s forwards
+        stroke-width: 1px
+    .st1
+        stroke: white
+        stroke-dasharray: 5000
+        stroke-dashoffset: 5000
+        animation: draw 15s forwards
+        stroke-width: 1px
+
+    .st2
+        stroke: #fff!important
+        stroke-dasharray: 5000
+        stroke-dashoffset: 5000
+        animation: draw 15s forwards
+        stroke-width: 2px
+    .st3 
+        stroke: white
+        stroke-dasharray: 5000
+        stroke-dashoffset: 5000
+        animation: draw 10s forwards
+        stroke-width: 2px
+svg#headerImage3, #headerImage5, #headerImage1
+    opacity: 0.7
+    .st0
+        stroke: white
+        stroke-dasharray: 5000
+        stroke-dashoffset: 5000
+        animation: draw 15s forwards
+        stroke-width: 1px
+    .st1
+        stroke: white
+        stroke-dasharray: 5000
+        stroke-dashoffset: 5000
+        animation: draw 15s forwards
+        stroke-width: 1px
+
+    .st2
+        stroke: #fff!important
+        stroke-dasharray: 5000
+        stroke-dashoffset: 5000
+        animation: draw 15s forwards
+        stroke-width: 2px
+    .st3 
+        stroke: white
+        stroke-dasharray: 5000
+        stroke-dashoffset: 5000
+        animation: draw 10s forwards
+        stroke-width: 2px
+
+@keyframes draw
+    from
+        stroke-dasharray: 5000
+        stroke-dashoffset: 5000
+    to
+        stroke-dasharray: 5000
+        stroke-dashoffset: 0
+@keyframes drawSmall
+    from
+        stroke-dasharray: 400
+        stroke-dashoffset: 400
+    to
+        stroke-dasharray: 400
+        stroke-dashoffset: 0
+
+.faq--container
+    min-height: 300px!important
+    div
+        height: 100%!important
+        position: relative
+        div
+            height: 100%
+            position: relative
+
+    .faq
+        width: 100%
+        height: 100%
+        min-height: 300px
+        position: relative
+        span
+            width: 150px
+            height: 160px
+       
+            background: $main-orange
+            display: flex
+            justify-content: center
+            align-items: center
+            color: white
+            font-size: 8em
+            font-weight: bold
+            box-shadow: 0 0 10px rgba(black, 0.15), 2px 2px 20px rgba(black, 0.15)
+            position: absolute
+            top: 45%
+            left: 50%
+        #f
+            transform: translate(-120%,-60%)
+        #a
+            transform: translate(-50%,-10%) rotate(7deg)
+            z-index: 10
+        #q
+            transform: translate(20%,-40%) rotate(-4deg)
+            z-index: 0
+    @media (max-width: 600px)
+        min-height: 200px
+        .faq
+            min-height: 200px
+            span
+                width: 100px
+                height: 110px
+                font-size: 6em
+.gmh--container-content
+
+    p
+        padding: 0
+        color: $grau-text
+    p,a
+        font-size: 0.825rem
+
+#karriere--kontakt
+    p
+        padding-bottom: 0
+    .img--100
+        max-width: 200px!important
+        width: 100%
+        height: auto
+        margin-bottom: 20px!important
+        display: block
+        @media (max-width: 850px)
+            max-width: 100px!important
+            display: inline-block
+#arbeitgeber, #studium
+    li
+        &:before
+            background: $main-orange

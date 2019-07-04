@@ -1,0 +1,646 @@
+body 
+    background: #fff!important
+
+    
+.gmh--col-1
+    flex: 1 0 0
+    max-width: 100%
+    height: 50vw
+    max-height: 350px
+    min-height: 160px
+.gmh--col-2
+    height: 50vw
+    max-height: 350px
+    min-height: 160px
+    flex: 2 0 0
+    max-width: 100%
+
+.gmh--container
+    background: #fff
+    position: relative
+    z-index: 1
+
+
+
+    
+
+
+    section
+        padding: 70px 40px 100px 40px
+        background: white
+        position: relative
+        z-index: 20
+        a
+            color: $main-rot
+            font-size: 1rem
+        @media (max-width: 960px)
+            padding: 20px
+        .row
+            max-width: 1400px
+            margin: 0 auto
+            padding: 0
+.red
+    background: $main-rot
+.yellow
+    background: $main-gelb
+.grey
+    background: $main-grau
+.blue
+    background: $main-blau
+.orange
+    background: $main-orange
+
+.gmh--section-header
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    height: 170px
+    margin-left: 30px
+    position: relative
+    z-index: 5
+    .gmh--section-header-box
+        width: 200px
+        height: 200px
+        min-width: 200px
+        min-height: 200px
+        color: white
+        padding: 20px
+        display: inline-flex
+        align-items: center
+        margin: 0 30px 30px 0
+        justify-content: center
+        &.blue, &.yellow
+            h2
+                color: white!important
+
+        h2
+            color: white
+            font-size: 1.5rem
+            text-transform: uppercase
+            line-height: 1.2
+            font-weight: bold
+            max-width: 100%
+            margin: 0
+    @media (max-width: 960px)
+        margin-left: 0
+        height: auto
+        .gmh--section-header-box
+            width: 150px
+            height: 150px
+            min-width: 150px
+            min-height: 150px
+            h2
+                font-size: 1.1rem
+    .gmh--section-header-text
+        &.short
+            max-width: 500px
+        p
+            color: $grau-text
+            font-size: 1rem
+            padding-bottom: 0
+            max-width: 600px
+.gmh--section-tabs
+    margin-top: 15px
+    margin-bottom: 30px
+    h3
+        padding: 4px 10px 0 0
+        margin: 0
+        margin-left: 6px
+        font-weight: normal
+        display: inline-block
+        font-size: 1.8rem
+        text-transform: uppercase
+        cursor: pointer
+        color: $grau-text
+        border-right: 2px solid $grau-text
+        transition: all 200ms ease
+        @media (max-width: 960px)
+            font-size: 1rem
+            line-height: 1.2
+            border-width: 1px 
+        &.active
+            color: $main-gelb
+            font-weight: bold
+        &:hover
+            color: $main-gelb
+        &:first-child
+            padding-left: 0
+            padding-right: 12px
+            margin: 0
+        &:last-child
+            padding-right: 0
+            border: none
+
+       
+.gmh--section-home-content
+    width: 100%
+    position: relative
+    z-index: 0
+    height: 40vw
+    max-height: 550px
+    min-height: 200px
+    margin-bottom: 40px
+    &:last-child
+        margin-bottom: 0
+    .gmh--section-home-image
+        width: 70%
+        min-width: 250px
+        max-width: 100%
+        box-shadow: 0 0 6px rgba(black,0.4), 0 0 4px rgba(black,0.1)
+        height: 100%
+    .img2
+        width: 66%!important
+    .variante1
+        width: 35%!important
+    .variante2
+        width: 34%!important
+        bottom: 0px!important
+        height: 100%
+        justify-content: center
+        display: flex
+        flex-direction: column
+        .icons3
+            display: flex
+            flex-direction: row-reverse
+    .variante3
+        min-height: 80%!important
+        
+        min-width: 35%
+        justify-content: center
+        display: flex
+        flex-direction: column
+        .icons3
+            display: flex
+            flex-direction: row-reverse
+        @media (max-width: 1063px)
+            bottom: 5%!important
+    .gmh--section-home-info
+        width: 40%
+        background: white
+        padding: 40px
+        box-shadow: 0 0 15px rgba(black,0.15), 0 0 4px rgba(black,0.05)
+        position: absolute
+        right: 0
+        bottom: 10%
+        top: 10%
+        min-height: 75%!important
+        display: flex
+        flex-direction: column
+        justify-content: center
+        min-width: 35%
+        .icons3
+            display: flex
+            flex-direction: row-reverse
+        @media (max-width: 1200px)
+            width: 50%
+            bottom: 5%
+            top: 5%
+        h3
+            color: $grau-text!important
+            text-transform: uppercase
+            font-size: 1.6rem
+        p
+            padding-bottom: 0
+            color: $grau-text
+            font-size: 1rem
+        ul
+            margin: 10px 0 0 0
+            li
+                color: $grau-text
+                position: relative
+                margin-left: 20px
+                margin-bottom: 5px
+                font-size: 1rem
+                &:before
+                    content: ""
+                    position: absolute
+                    width: 8px
+                    height: 8px
+                    background: $main-rot
+                    left: -20px
+                    top: 5px
+                    
+        
+
+    &:nth-child(odd)
+        .gmh--section-home-image
+            float: right
+        .gmh--section-home-info
+            right: auto
+            left: 0
+    @media (max-width: 960px)
+        height: auto
+        min-height: none
+        max-height: none
+        &:nth-child(odd)
+            .gmh--section-home-image
+                float: none
+        .gmh--section-home-image, .img2
+            width: 100vw!important
+            height: 40vw
+            min-height: 200px
+            margin-left: -20px
+            margin-right: -20px  
+            position: relative 
+            max-width: none
+            box-shadow: none
+        .gmh--section-home-info
+            width: 100%!important
+            max-width: 600px
+            position: relative
+            left: 0
+            top: -20px
+            bottom: 0px
+            right: 20px
+            padding: 20px
+            margin: 0 auto
+            h3
+                font-size: 1.3rem
+.gmh--section-divider
+    width: 100%
+    height: 6px
+    border: none
+    outline: none
+    background: lighten($main-grau, 40%)
+    position: relative
+.clearfix
+    oerflow: auto
+    &:after
+        content: ""
+        display: table
+        clear: both
+
+
+.gmh--link-icons
+    display: inline-block
+    float: right
+    position: relative
+    transition: all 200ms ease
+    margin-top: 20px
+    z-index: 100
+
+    .link-icons
+        display: inline-block
+        width: 15px
+        height: 15px
+        position: absolute
+        bottom: 0
+        right: 65px
+        bottom: 0
+        &:before
+            content: ""
+            width: 10px
+            height: 10px
+            background: inherit
+            position: absolute
+            left: -20px
+            top: 50%
+            transform: translate(0,-50%)
+        &:after
+            content: ""
+            width: 5px
+            height: 5px
+            background: inherit
+            position: absolute
+            left: -35px
+            top: 50%
+            transform: translate(0,-50%)
+
+
+    .arrow
+        display: inline-block
+        width: 55px
+        height: 55px
+        text-align: center
+        line-height: 55px
+        transition: all 200ms ease
+        position: relative
+        &:after
+            transition: all 200ms ease
+            content: ""
+            width: 100%
+            height: 100%
+            position: absolute
+            background: rgba(white, 0.0)
+            left: 0
+            top: 0
+
+        i
+            color: white
+            font-size: 35px
+            transition: all 300ms ease
+            left: 0
+            &.top
+                transition: all 300ms ease
+    &:hover
+        .arrow
+            &:after
+                content: ""
+                width: 100%
+                height: 100%
+                position: absolute
+                background: rgba(white, 0.2)
+                left: 0
+                top: 0
+            i
+                left: 4px
+                &.top
+                    left: 0
+                    top: -4px
+
+.fa
+    font-family: FontAwesome!important
+
+        
+.gmh--project-teaser
+    display: none
+    position: relative
+    &.active
+        display: flex
+        flex-wrap: wrap
+    .gmh--project-teaser-img
+        box-shadow: 0 0 8px rgba(black,0.2), 0 0 4px rgba(black,0.1)
+        flex: 1 0 0
+        margin: 0 20px
+        min-width: 180px
+        height: 0
+        position: relative
+        padding-bottom: 31%
+        background: #000
+        &:first-child
+            margin-left: 0
+        &:last-child
+            margin-right: 0
+        .gmh--project-teaser-caption
+            width: 100%
+            position: absolute
+            left: 0
+            bottom: 0
+            height: 150px
+            max-height: 100%
+            background: linear-gradient(to top, rgba(black, 0.8), rgba(black, 0))
+
+            h4
+                color: white
+                text-transform: uppercase
+                font-weight: bold
+                line-height: 1.2
+                font-size: 1.0rem
+                position: absolute
+                bottom: 10px
+                right: 20px
+                text-align: right
+
+        @media (max-width: 960px)
+            margin: 10px!important
+            .gmh--project-teaser-caption
+                h4
+                    font-size: 1rem
+        @media (max-width: 660px)
+            padding-bottom: 60%
+            max-width: 100%
+            min-width: 80%
+            .gmh--project-teaser-caption
+                width: 100%
+                min-width: 45%
+           
+
+        
+
+.gmh--image-wrapper
+    width: 100%
+    height: 40vw
+    position: relative
+    text-align: left
+    overflow: hidden
+ 
+.stockhinweis
+    color: white
+    position: absolute
+    background: red
+    padding: 10px
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+.stockfoto
+    position: relative
+    cursor: pointer
+    &:after
+        content: 'Stockfoto'
+        color: white
+        position: absolute
+        background: red
+        padding: 10px
+        left: 50%
+        top: 50%
+
+.platzhalter
+    position: relative
+    &:after
+        content: 'Platzhalter'
+        color: white
+        position: absolute
+        background: red
+        padding: 10px
+        left: 50%
+        top: 50%
+.aenderung
+    position: absolute
+    right: 0
+    top: 0
+    width: 40px
+    height: 40px
+    color: transparent
+    &:after
+        content: "\f071"
+        font-family: FontAwesome
+        color: $main-rot
+        position: absolute
+        padding: 10px
+        right: 0
+        top: 0
+        display: inline-block
+        margin: 0 0 0 20px
+    
+    &:before
+        content: "Änderungsbekanntmachung"
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 0
+        background: #fff
+        color: $main-rot
+        padding: 5px 10px
+        box-shadow: 0 0 5px rgba(black, 0.2)
+        z-index: 999
+        opacity: 0
+        transition: all 100ms ease
+        pointer-events: none
+    &:hover
+        &:before
+            right: 100%
+            opacity: 1
+
+
+.icons
+    display: block
+    width: 15px
+    height: 15px
+    margin: 0 0 15px
+    position: relative
+    &:before
+        content: ""
+        width: 10px
+        height: 10px
+        background: inherit
+        position: absolute
+        left: 25px
+        top: 50%
+        transform: translate(0,-50%)
+    &:after
+        content: ""
+        width: 5px
+        height: 5px
+        background: inherit
+        position: absolute
+        left: 45px
+        top: 50%
+        transform: translate(0,-50%)
+.content
+    max-width: 1000px
+    margin: 0 auto!important
+    float: none!important
+
+
+.soft-row
+    display: flex
+    flex-wrap: wrap
+.gmh--text-intro
+    margin: 40px
+
+.m60
+    margin-top: 60px!important
+    margin-bottom: 60px!important
+.gmh--col-img
+    img
+        max-width: 100%
+        height: auto
+
+.toggles
+    .toggle
+        &>div
+            padding: 20px
+            
+                        
+        h3
+            font-size: 1rem
+            a
+                font-size: 1rem!important
+                text-transform: uppercase
+                line-height: 1.4!important
+                color: white
+                font-weight: 800
+                i
+                    font-size: inherit
+                    color: inherit
+                    font-family: FontAwesome!important
+                    
+                    
+                    &:before
+                        content: "\f0da"
+                        font-size: 20px
+                        line-height: 1
+                        color: inherit
+        &.open
+            border: 1px solid $main-orange
+            h3
+                a
+                    background: $main-orange!important
+                    i
+                        transform: rotate(90deg)
+                        top: 16px
+                        &:before
+                            content: "\f0da"
+            p
+                font-size: 1em
+                color: $grau-text
+            ul
+                margin-bottom: 20px
+                li
+                    margin-left: 20px
+                    margin-bottom: 10px
+                    position: relative
+                    &:before
+                        content: ""
+                        position: absolute
+                        width: 8px
+                        height: 8px
+                        background: $main-rot
+                        left: -20px
+                        top: 5px
+#faq, #arbeitgeber
+    .toggles
+        max-width: 1000px
+        margin: 0 auto
+        .toggle
+            border: 1px solid lighten($main-orange, 10%)
+            &>div
+                padding: 20px               
+            h3
+                font-size: 1rem
+                line-height: 1
+                a
+                    font-size: 1rem!important
+                    text-transform: uppercase
+                    line-height: 1.4!important
+                    color: white
+                    font-weight: 800
+                    background: $main-orange
+                    padding: 14px 14px 12px 43px
+                    i
+                        font-size: inherit
+                        color: inherit
+                        font-family: FontAwesome!important
+                        top: 45%
+                        transform: translateY(-50%)
+                        line-height: 0
+                        
+                        &:before
+                            content: "\f0da"
+                            font-size: 20px
+                            line-height: 1
+                            color: inherit
+            &.open
+                border: 1px solid $main-orange
+                h3
+                    a
+                        background: $main-orange!important
+                        i
+                            transform: rotate(90deg)
+                            top: 16px
+                            &:before
+                                content: "\f0da"
+                p
+                    font-size: 1rem
+                    color: $grau-text
+                a
+                    color: $main-orange
+                ul
+                    margin-bottom: 20px
+                    li
+                        margin-left: 20px
+                        margin-bottom: 10px
+                        position: relative
+                        font-size: 1rem
+                        &:before
+                            content: ""
+                            position: absolute
+                            width: 8px
+                            height: 8px
+                            background: $main-orange
+                            left: -20px
+                            top: 5px
+.target
+    position: absolute
+    left: 0
+    top: -70px

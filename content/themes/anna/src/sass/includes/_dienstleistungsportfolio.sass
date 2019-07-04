@@ -1,0 +1,61 @@
+#dienstleistungen
+    #gmh--dienstleistungen-intro
+        padding: 60px 40px
+        p
+            margin: 0
+            padding: 0
+
+
+    h2
+        color: $main-rot
+        text-transform: uppercase
+        font-size: 1.6rem
+        max-width: 800px
+        margin-bottom: 20px
+
+    p, b
+        font-size: 1rem
+        max-width: 800px
+
+    a 
+        color: $main-rot
+        margin-bottom: 10px
+        display: inline-block
+    .gmh--col-1
+        height: 50vw
+        max-height: 350px
+        min-height: 200px
+        margin-bottom: 30px
+    .gmh--col-2
+        height: 50vw
+        max-height: 350px
+        min-height: 160px
+        margin-bottom: 30px
+    .margin-right
+        margin-right: 20px
+    @media (max-width: 650px)
+        .mobile-hidden
+            display: none
+        .margin-right
+            margin-right: 0
+
+    section
+        padding: 0 40px
+
+    ul
+        margin: 0px 0 20px 0
+        li
+            // color: $grau-text
+            position: relative
+            margin-left: 20px
+            margin-bottom: 5px
+            font-size: 1rem
+            &:before
+                content: ""
+                position: absolute
+                width: 8px
+                height: 8px
+                background: $main-rot
+                left: -20px
+                top: 5px
+    

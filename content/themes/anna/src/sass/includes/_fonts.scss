@@ -1,0 +1,52 @@
+/* Webfont: HamburgSans-Regular */
+@font-face {
+    font-family: 'hamburgsans';
+    src: url('fonts/HamburgSans-Regular.eot');
+    /* IE9 Compat Modes */
+    src: url('fonts/HamburgSans-Regular.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('fonts/HamburgSans-Regular.woff2') format('woff2'),
+        /* Modern Browsers */
+        url('fonts/HamburgSans-Regular.woff') format('woff'),
+        /* Modern Browsers */
+        url('fonts/HamburgSans-Regular.svg#HamburgSans-Regular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Webfont: HamburgSans-Italic */
+@font-face {
+    font-family: 'hamburgsans';
+    src: url('fonts/HamburgSans-Italic.eot');
+    /* IE9 Compat Modes */
+    src: url('fonts/HamburgSans-Italic.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('fonts/HamburgSans-Italic.woff2') format('woff2'),
+        /* Modern Browsers */
+        url('fonts/HamburgSans-Italic.woff') format('woff'),
+        /* Modern Browsers */
+        url('fonts/HamburgSans-Italic.svg#HamburgSans-Italic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Webfont: HamburgSans-Bold */
+@font-face {
+    font-family: 'hamburgsans';
+    src: url('fonts/HamburgSans-Bold.eot');
+    /* IE9 Compat Modes */
+    src: url('fonts/HamburgSans-Bold.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('fonts/HamburgSans-Bold.woff2') format('woff2'),
+        /* Modern Browsers */
+        url('fonts/HamburgSans-Bold.woff') format('woff'),
+        /* Modern Browsers */
+        url('fonts/HamburgSans-Bold.svg#HamburgSans-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+p {
+    font-size: 1rem;
+}
+
